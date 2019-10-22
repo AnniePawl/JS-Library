@@ -1,9 +1,22 @@
-// Goal: Uppercase each letter in a string
+// Capitalize First Word
+String.prototype.capitalize = function () {
+  return this[0].toUpperCase() + this.slice(1)
+}
 
-// Check 1st character to confirm it is actual letter
+console.log("foo bar".capitalize())
 
-// Split on space (tab, line return)
 
-// Uppercase string 
+// Capitalize All
+String.prototype.allCaps = function () {
+  return this.toUpperCase()
+}
 
-// Merge Strings
+console.log("foo bar".allCaps())
+
+
+// Transform to Uppercase
+// function Uppercase(str) {
+
+// }
+
+
