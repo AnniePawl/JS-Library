@@ -67,9 +67,10 @@ String.prototype.snakeCase = function () {
 console.log("foo bar".snakeCase())
 
 
-// CAMEL CASE
-// String.prototype.CamelCase = function () {
+CAMEL CASE
+String.prototype.CamelCase = function () {
+  return this.split(' ').
 
-// }
-// console.log("foo bar".CamelCase())
+}
+console.log("foo bar".CamelCase())
 
