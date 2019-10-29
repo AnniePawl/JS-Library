@@ -1,4 +1,4 @@
-// Capitalize first word 
+// CAPITALIZE FIRST WORD
 String.prototype.capitalizeFirst = function () {
 
   // const charOne = this[0]
@@ -12,7 +12,7 @@ console.log("foo bar".capitalizeFirst())
 
 
 
-// TRANSFORM FOR UPPERCASE
+// TRANSFORM TO UPPERCASE
 String.prototype.upperCase = function () {
   return this.toUpperCase()
 }
@@ -47,30 +47,51 @@ console.log("  foo   bar ".removeSpace())
 
 // Remove Extra Space Alternative
 String.prototype.removeSpace2 = function () {
-  return this.trim()
+  // "a frog"       ['a', '  frog  ']
+  return this.split(' ').map((word) => { return word.trim() }).join('')
 }
-console.log("  foo   bar ".removeSpace2())
+
+console.log('------------')
+console.log(" aaa foo moo  bar ".removeSpace2())
 
 
 
 // KABOB CASE
 String.prototype.kabobCase = function () {
-  return this.removeSpace().toLowerCase().split(' ').join('-')
+  // Lowercase, split on space, trim, join with -
+  const t = this
+    .toLowerCase()
+    .split(" ")
+
+  console.log('')
+  console.log(t)
+  console.log('')
+
+  return this
+    .toLowerCase()
+    .split(" ")
+    // .map((word) => word.trim())
+    .filter((word) => word != '')
+    .join('-')
+
+  // return this.removeSpace().toLowerCase().split(' ').join('-')
+
+  // ' '  >  '' > -''-
 }
-console.log("foo  Bar".kabobCase())
+console.log("  foo  Kabob  \n  Bar \t r ".kabobCase())
 
 
 // SNAKE CASE
 String.prototype.snakeCase = function () {
   return this.split(' ').join('_')
 }
-console.log("foo bar".snakeCase())
+console.log("foo   Bar".snakeCase())
 
 
-CAMEL CASE
-String.prototype.CamelCase = function () {
-  return this.split(' ').
+// CAMEL CASE
+// String.prototype.CamelCase = function () {
+//   return this.split(' ').
 
-}
-console.log("foo bar".CamelCase())
+// }
+// console.log("foo bar".CamelCase())
 

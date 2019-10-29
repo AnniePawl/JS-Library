@@ -1,7 +1,6 @@
 {
   "name": "@annapawl/string_library",
   "version": "1.0.1",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,6 @@
   "bugs": {
     "url": "https://github.com/AnniePawl/JS-String-Library/issues"
   },
-  "homepage": "https://github.com/AnniePawl/JS-String-Library#readme"
+  "homepage": "https://github.com/AnniePawl/JS-String-Library#readme",
+  "description": ""
 }
