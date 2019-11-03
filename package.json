@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
     "url": "https://github.com/AnniePawl/JS-String-Library/issues"
   },
   "homepage": "https://github.com/AnniePawl/JS-String-Library#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
