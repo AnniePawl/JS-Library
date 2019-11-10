@@ -1,7 +1,7 @@
 # JS String Library
 
-![npm](https://img.shields.io/npm/v/@annapawl/string_library?style=for-the-badge) 
-![GitHub repo size](https://img.shields.io/github/repo-size/AnniePawl/JS-String-Library?style=for-the-badge)
+![npm](https://img.shields.io/npm/v/@annapawl/string_library?color=%232fad8e)
+![GitHub repo size](https://img.shields.io/github/repo-size/AnniePawl/JS-String-Library?color=%232fad8e)
 
 ## Capitalization 
 **capitalizeFirst()** </br> 
