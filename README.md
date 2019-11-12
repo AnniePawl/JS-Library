@@ -14,7 +14,7 @@ npm install @annapawl/string_library --save
 ``` 
 Then add this to your index.js file <br/>
 ```
-require('@annapawl/string_library')
+require('@annapawl/src/string_library')
 ```
 
 ## Capitalization 
