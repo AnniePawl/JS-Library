@@ -1,8 +1,9 @@
 {
   "name": "@annapawl/string_library",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "main": "index.js",
   "scripts": {
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest"
   },
   "repository": {
@@ -17,6 +18,9 @@
   "homepage": "https://github.com/AnniePawl/JS-String-Library#readme",
   "description": "",
   "devDependencies": {
+    "coveralls": "^3.0.7",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
     "jest": "^24.9.0"
   }
 }

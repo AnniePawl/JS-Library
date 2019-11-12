@@ -1,6 +1,7 @@
 # JS String Library
 
 ![npm](https://img.shields.io/npm/v/@annapawl/string_library?color=%232fad8e)
+![npm bundle size](https://img.shields.io/bundlephobia/min/@annapawl/string_library?color=%23509a82)
 ![GitHub repo size](https://img.shields.io/github/repo-size/AnniePawl/JS-String-Library?color=%232fad8e)
 
 ## Capitalization 
