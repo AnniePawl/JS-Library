@@ -1,63 +1,68 @@
 require('../index')
 
-// Capitalize First Letter Test 
-test('Capitalize First Letter', () => {
-  expect('hello'.capitalizeFirst()).not().toBe('hello')
-  expect('hello'.capitalizeFirst()).toBe('Hello')
-  expect('good morning'.capitalizeFirst().toBe('Good morning'))
+// capitalizeFirst() Test 
+test('capitalizeFirst', () => {
+  expect('jello'.capitalizeFirst()).toBe('Jello')
+  expect('jello earth'.capitalizeFirst()).toBe('Jello earth')
+  expect(' jello earth'.capitalizeFirst()).toBe(' jello earth')
 })
 
-// All Caps Test
-test('All Caps Test', () => {
-  expect('good morning'.capitalizeAll()).toBe('Good Morning')
-  expect('good-morning'.capitalizeAll()).toBe('Good-Morning')
-  expect('good  morning'.capitalizeAll()).toBe('Good  Morning')
-  expect(' good  morning'.capitalizeAll()).toBe(' Good  Morning')
+// capitalizeAll() Test
+test('capitalizeAll', () => {
+  expect('gingerbread house'.captitalizeAll()).toBe('Gingerbread House')
+  expect('gingerbread-house'.captitalizeAll()).toBe('Gingerbread-house')
+})
+
+// upperCase() Test
+test('upperCase', () => {
+  expect('king kong'.upperCase()).toBe('KING KONG')
+  expect('king   kong'.upperCase()).toBe('KING   KONG')
+  expect('  king kong  '.upperCase()).toBe('  KING KONG  ')
+  expect('king-kong'.upperCase()).toBe('KING-KONG')
+})
+
+// // removeAllSpaces() Test
+test('removeAllSpaces', () => {
+  expect('space out'.removeAllSpaces()).toBe('spaceout')
+  expect('  space out  '.removeAllSpaces()).toBe('spaceout')
+})
+
+// removeEndSpaces() Test
+test('removeEndSpaces', () => {
+  expect(' derby girl '.removeEndSpaces()).toBe('derby girl')
+  expect('   derby girl   '.removeEndSpaces()).toBe('derby girl')
+  expect('  derby   girl  '.removeEndSpaces()).toBe('derby   girl')
+})
+
+// removeExcessSpaces() Test
+test('removeExcessSpaces', () => {
+  expect('get   closer'.removeExcessSpaces()).toBe('get closer')
+  expect('  get closer  '.removeExcessSpaces()).toBe('get closer')
+  expect(' get  closer   to    me  '.removeExcessSpaces()).toBe('get closer to me')
+})
+
+// kebabCase() Test
+test('kebabCase', () => {
+  expect('kit kat bar'.kebabCase()).toBe('kit-kat-bar')
+  expect('Kit Kat Bar'.kebabCase()).toBe('kit-kat-bar')
+  expect('KIT KAT BAR'.kebabCase()).toBe('kit-kat-bar')
+  expect('kit  kat  bar'.kebabCase()).toBe('kit--kat--bar')
+  expect('  kit kat bar  '.kebabCase()).toBe('--kit-kat-bar--')
+})
+
+// snakeCase() Test
+test('snakeCase', () => {
+  expect('sneaky slippery snake'.snakeCase()).toBe('sneaky_slippery_snake')
+  expect('Sneaky Slippery Snake'.snakeCase()).toBe('sneaky_slippery_snake')
+  expect('SNEAKY SLIPPERY SNAKE'.snakeCase()).toBe('sneaky_slippery_snake')
+  expect('sneaky  slippery  snake'.snakeCase()).toBe('sneaky__slippery__snake')
+  expect(' sneaky slippery snake '.snakeCase()).toBe('_sneaky_slippery_snake_')
 
 })
 
-// UPPERCASE TEST
-test('Upper Case Test', () => {
-  expect('uppercase'.upperCase()).toBe('UPPERCASE')
-  expect(' upper  case  '.upperCase()).toBe('UPPER CASE')
-})
-
-// Remove Extra Space Test
-// Checks for front/back white space, tab, new line, 
-test('Remove Space Test', () => {
-  expect('good  morning'.removeSpace()).toBe(' goodmorning')
-  expect('  goodmorning  '.removeSpace()).toBe(' goodmorning')
-  expect(' good  /t morning'.removeSpace()).toBe(' goodmorning')
-  expect(' good /n morning'.removeSpace()).toBe(' goodmorning')
-
-})
-
-
-// Kabob Case Test 
-test('Kabob Cast Test', () => {
-  expect('kabob me'.kababCase()).toBe('kabob-me')
-  expect(' kabob me '.kabobCase()).toBe('kabob-me')
-  expect('kabob   me'.kabobCase()).toBe('kabob-case')
-})
-
-
-// Snake Case Test 
-test('Snake Case', () => {
-  expect('snake case'.snakeCase()).toBe('snake_case')
-  expect('Snake Case'.snakeCase()).toBe('snake_case_me')
-  expect(' snake case me '.snakeCase()).toBe('snake_case')
-  expect('snake   case'.snakeCase()).toBe('snake_case')
-  expect('snake   /ncase'.snakeCase()).toBe('snake_case')
-  expect('snake   /t case '.snakeCase()).toBe('snake_case')
-})
-
-
-// Camel Case Test 
-test('Camel Case Test', () => {
-  expect('camel case'.camelCase().toBe('camelCase'))
-  expect('  camel case  '.camelCase()).toBe('camelCase')
-  expect('camel    case'.camelCase()).toBe('camelCase')
-  expect('camel /t case'.camelCase()).toBe('camelCase')
-  expect('camel /n case'.camelCase()).toBe('camelCase')
-
+// camelCase() Test
+test('camelCase', () => {
+  expect('happy hump day'.camelCase()).toBe('happyHumpDay')
+  expect('  happy  hump  day  '.camelCase()).toBe('happyHumpDay')
+  expect('Happy Hump Day'.camelCase()).toBe('happyHumpDay')
 })

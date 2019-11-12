@@ -1,43 +1,63 @@
-// Capitalize first word 
+// capitalizeFirst()
+// Capitalizes the first letter of a string 
 String.prototype.capitalizeFirst = function () {
   return this[0].toUpperCase() + this.slice(1)
 }
 
-// Capitalize All Words
-// Edge Case- Extra spaces between words?
+// capitalizeAll()
+// Capitalizes the first letter of all words in a string
 String.prototype.captitalizeAll = function () {
   return this.split(' ').map((word) => {
     return word[0].toUpperCase() + word.slice(1)
   }).join(' ')
 }
 
-// UPPERCASE ALL
-// Edge Cases?
+// upperCase()
+// Transforms all letters to uppercase
 String.prototype.upperCase = function () {
   return this.toUpperCase()
 }
 
-// Remove Spaces 
-// Edge Cases?
-String.prototype.removeSpace = function () {
+// removeAllSpaces()
+// Removes all spaces from a string 
+String.prototype.removeAllSpaces = function () {
   return this.replace(/\s/g, "")
 }
 
-// kabob-case
-// Edge Cases
-String.prototype.kabobCase = function () {
+// removeEndSpaces()
+// Removes spaces from both ends of a string
+String.prototype.removeEndSpaces = function () {
+  return this.trim()
+}
+
+// removeExcessSpaces()
+// Removes excess space around words (leaves single space)
+String.prototype.removeExcessSpaces = function () {
+  const result = [];
+  this.trim().split(' ').forEach((word) => {
+    if (word.length > 0) {
+      result.push(word.trim());
+    }
+  });
+  return result.join(' ');
+}
+
+// kebabCase()
+// Transforms string to lowercase and replaces spaces with hyphen 
+String.prototype.kebabCase = function () {
   return this.toLowerCase().split(' ').join('-')
 }
 
-// Snake Case
-// Edge Cases? 
+// snakeCase()
+// Transforms string to lowercase and replaces spcaces with underscore
 String.prototype.snakeCase = function () {
   return this.toLowerCase().split(' ').join('_')
 }
-console.log('snake case me'.snakeCase())
-
 
 // CamelCase
+// Capitalizes first letter of each word following first word and removes spaces
 String.prototype.camelCase = function () {
-  return
+  const words = this.removeExcessSpaces().captitalizeAll().split(' ');
+  words[0] = words[0].toLowerCase();
+  return words.join('');
 }
