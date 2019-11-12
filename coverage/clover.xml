@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1573540802394" clover="3.2.0">
-  <project timestamp="1573540802394" name="All files">
+<coverage generated="1573599042992" clover="3.2.0">
+  <project timestamp="1573599042992" name="All files">
     <metrics statements="25" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11" elements="38" coveredelements="38" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1"/>
-    <file name="index.js" path="/Users/annapawl/Desktop/CODE/Make_School/Front_End/JS_Libraries/String_Library/index.js">
+    <file name="index.js" path="/Users/annapawl/Desktop/CODE/Make_School/Front_End/JS_Libraries/String_Library/src/index.js">
       <metrics statements="25" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="3" type="stmt"/>

@@ -1,4 +1,4 @@
-require('../index')
+require('../src/index')
 
 // capitalizeFirst() Test 
 test('capitalizeFirst', () => {

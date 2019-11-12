@@ -1,8 +1,14 @@
 {
   "name": "@annapawl/string_library",
-  "version": "2.1.1",
-  "main": "index.js",
+  "version": "2.2.3",
+  "main": "umd/anna-string-library.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm/*",
+    "emd/*"
+  ],
   "scripts": {
+    "prepare": "rollup --config",
     "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest"
   },
@@ -21,6 +27,7 @@
     "coveralls": "^3.0.7",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.16.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "rollup-plugin-terser": "^5.1.2"
   }
 }
