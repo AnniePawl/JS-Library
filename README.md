@@ -1,8 +1,21 @@
 # JS String Library
-
 ![npm](https://img.shields.io/npm/v/@annapawl/string_library?color=%232fad8e)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@annapawl/string_library?color=%23509a82)
 ![GitHub repo size](https://img.shields.io/github/repo-size/AnniePawl/JS-String-Library?color=%232fad8e)
+[![Build Status](https://travis-ci.com/AnniePawl/JS-String-Library.svg?branch=master)](https://travis-ci.com/AnniePawl/JS-String-Library)
+[![Coverage Status](https://coveralls.io/repos/github/AnniePawl/JS-String-Library/badge.svg?branch=master)](https://coveralls.io/github/AnniePawl/JS-String-Library?branch=master)
+
+A lightweight library that extends the functionality of JavaScript's built-in String type
+
+### Getting Started
+Run the following command in your project folder: <br/>
+```
+npm install @annapawl/string_library --save
+``` 
+Then add this to your index.js file <br/>
+```
+require('@annapawl/string_library')
+```
 
 ## Capitalization 
 **capitalizeFirst()** </br> 
@@ -32,12 +45,30 @@ This method removes spaces from a string and capitalizes the first letter of eac
 `'String Cheese'.camelCase()` &#8594; "stringCheese"
 
 ## Spacing 
-**removeEndSpace()** </br> 
+**removeEndSpaces()** </br> 
 This method removes any extra space before and after a string </br> 
-`'   String Cheese   '.removeEndSpace()` &#8594; "String Cheese"
+`'   String Cheese   '.removeEndSpaces()` &#8594; "String Cheese"
 
-**removeAllSpace()** </br> 
+**removeAllSpaces()** </br> 
 This method removes any space within a string </br> 
-`'   String Cheese  '.camelCase()` &#8594; "StringCheese"
+`'   String Cheese  '.removeAllSpaces()` &#8594; "StringCheese"
+
+**removeExcessSpaces()** </br> 
+This method removes excess spaces around words (leaves single space) </br> 
+`'   String Cheese  '.removeAllSpaces()` &#8594; "StringCheese"
 
 ## Test Coverage 
+```
+npx jest --coverage
+```
+----------|----------|----------|----------|----------|-------
+------------|
+File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+----------|----------|----------|----------|----------|-------------------|
+All files |      100 |      100 |      100 |      100 |                   |
+ index.js |      100 |      100 |      100 |      100 |                   |
+----------|----------|----------|----------|----------|-------------------|
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        1.686s
