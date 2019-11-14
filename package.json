@@ -1,8 +1,9 @@
 {
   "name": "@annapawl/string_library",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "main": "umd/anna-string-library.js",
   "module": "esm/index.js",
+  "types": "umd/index.d.ts",
   "files": [
     "esm/*",
     "emd/*"
@@ -28,6 +29,9 @@
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.16.0",
     "jest": "^24.9.0",
-    "rollup-plugin-terser": "^5.1.2"
+    "rollup": "^1.27.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "typescript": "^3.7.2"
   }
 }
