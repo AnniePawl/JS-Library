@@ -4,7 +4,8 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/AnniePawl/JS-String-Library?style=flat-square)
 [![Build Status](https://travis-ci.com/AnniePawl/JS-String-Library.svg?branch=master)](https://travis-ci.com/AnniePawl/JS-String-Library)
 [![Coverage Status](https://coveralls.io/repos/github/AnniePawl/JS-String-Library/badge.svg?branch=master)](https://coveralls.io/github/AnniePawl/JS-String-Library?branch=master)
-
+![npm](https://img.shields.io/npm/dy/@annapawl/string_library?style=flat-square)
+[![NPM](https://img.shields.io/static/v1?style=social&logo=npm&label=NPM&message=install)](https://www.npmjs.com/package/<@annapawl/string_library>)
 This is a lightweight library that extends the functionality of JavaScript's built-in String type
 
 ### Getting Started
