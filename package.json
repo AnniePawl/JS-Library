@@ -1,6 +1,6 @@
 {
   "name": "@annapawl/string_library",
-  "version": "2.2.4",
+  "version": "2.3.4",
   "main": "umd/anna-string-library.js",
   "module": "esm/index.js",
   "types": "umd/index.d.ts",

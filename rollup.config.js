@@ -11,15 +11,17 @@ export default [{
       }
     )
   ],
-
   output: {
     file: 'umd/anna-string-library.js',
     format: 'umd',
     name: 'annaStringLibrary',
-    esModule: false,
+    esModule: false
   }
-
-},
-
-
+}, {
+  input: 'src/index.js',
+  output: {
+    file: 'esm/index.js',
+    format: 'esm',
+  }
+}
 ]

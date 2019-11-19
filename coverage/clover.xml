@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1573599042992" clover="3.2.0">
-  <project timestamp="1573599042992" name="All files">
+<coverage generated="1574200751563" clover="3.2.0">
+  <project timestamp="1574200751563" name="All files">
     <metrics statements="25" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11" elements="38" coveredelements="38" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1"/>
     <file name="index.js" path="/Users/annapawl/Desktop/CODE/Make_School/Front_End/JS_Libraries/String_Library/src/index.js">
       <metrics statements="25" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="3" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="10" count="5" type="stmt"/>
-      <line num="11" count="12" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="18" count="4" type="stmt"/>
-      <line num="23" count="1" type="stmt"/>
-      <line num="24" count="2" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
-      <line num="30" count="3" type="stmt"/>
-      <line num="35" count="1" type="stmt"/>
-      <line num="36" count="6" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+      <line num="10" count="12" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="4" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="2" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="3" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="6" type="stmt"/>
+      <line num="32" count="6" type="stmt"/>
+      <line num="33" count="27" type="cond" truecount="2" falsecount="0"/>
+      <line num="34" count="17" type="stmt"/>
       <line num="37" count="6" type="stmt"/>
-      <line num="38" count="27" type="cond" truecount="2" falsecount="0"/>
-      <line num="39" count="17" type="stmt"/>
-      <line num="42" count="6" type="stmt"/>
-      <line num="47" count="1" type="stmt"/>
-      <line num="48" count="5" type="stmt"/>
-      <line num="53" count="1" type="stmt"/>
-      <line num="54" count="5" type="stmt"/>
-      <line num="59" count="1" type="stmt"/>
-      <line num="60" count="3" type="stmt"/>
-      <line num="61" count="3" type="stmt"/>
-      <line num="62" count="3" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="5" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="47" count="5" type="stmt"/>
+      <line num="51" count="1" type="stmt"/>
+      <line num="52" count="3" type="stmt"/>
+      <line num="53" count="3" type="stmt"/>
+      <line num="54" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>

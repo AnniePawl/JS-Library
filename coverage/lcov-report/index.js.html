@@ -101,19 +101,10 @@
 <a name='L53'></a><a href='#L53'>53</a>
 <a name='L54'></a><a href='#L54'>54</a>
 <a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L56'></a><a href='#L56'>56</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -124,10 +115,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -136,10 +125,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -154,16 +141,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -175,73 +159,65 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// capitalizeFirst()
 // Capitalizes the first letter of a string 
 String.prototype.capitalizeFirst = function () {
-  return this[0].toUpperCase() + this.slice(1)
-}
-&nbsp;
+    return this[0].toUpperCase() + this.slice(1);
+};
 // capitalizeAll()
 // Capitalizes the first letter of all words in a string
 String.prototype.captitalizeAll = function () {
-  return this.split(' ').map((word) =&gt; {
-    return word[0].toUpperCase() + word.slice(1)
-  }).join(' ')
-}
-&nbsp;
+    return this.split(' ').map(function (word) {
+        return word[0].toUpperCase() + word.slice(1);
+    }).join(' ');
+};
 // upperCase()
 // Transforms all letters to uppercase
 String.prototype.upperCase = function () {
-  return this.toUpperCase()
-}
-&nbsp;
+    return this.toUpperCase();
+};
 // removeAllSpaces()
 // Removes all spaces from a string 
 String.prototype.removeAllSpaces = function () {
-  return this.replace(/\s/g, "")
-}
-&nbsp;
+    return this.replace(/\s/g, "");
+};
 // removeEndSpaces()
 // Removes spaces from both ends of a string
 String.prototype.removeEndSpaces = function () {
-  return this.trim()
-}
-&nbsp;
+    return this.trim();
+};
 // removeExcessSpaces()
 // Removes excess space around words (leaves single space)
 String.prototype.removeExcessSpaces = function () {
-  const result = [];
-  this.trim().split(' ').forEach((word) =&gt; {
-    if (word.length &gt; 0) {
-      result.push(word.trim());
-    }
-  });
-  return result.join(' ');
-}
-&nbsp;
+    var result = [];
+    this.trim().split(' ').forEach(function (word) {
+        if (word.length &gt; 0) {
+            result.push(word.trim());
+        }
+    });
+    return result.join(' ');
+};
 // kebabCase()
 // Transforms string to lowercase and replaces spaces with hyphen 
 String.prototype.kebabCase = function () {
-  return this.toLowerCase().split(' ').join('-')
-}
-&nbsp;
+    return this.toLowerCase().split(' ').join('-');
+};
 // snakeCase()
 // Transforms string to lowercase and replaces spcaces with underscore
 String.prototype.snakeCase = function () {
-  return this.toLowerCase().split(' ').join('_')
-}
-&nbsp;
+    return this.toLowerCase().split(' ').join('_');
+};
 // CamelCase
 // Capitalizes first letter of each word following first word and removes spaces
 String.prototype.camelCase = function () {
-  const words = this.removeExcessSpaces().captitalizeAll().split(' ');
-  words[0] = words[0].toLowerCase();
-  return words.join('');
-}
+    var words = this.removeExcessSpaces().captitalizeAll().split(' ');
+    words[0] = words[0].toLowerCase();
+    return words.join('');
+};
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Nov 12 2019 14:50:42 GMT-0800 (PST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Nov 19 2019 13:59:11 GMT-0800 (PST)
 </div>
 </div>
 <script src="prettify.js"></script>
